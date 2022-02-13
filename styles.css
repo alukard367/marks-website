@@ -1,0 +1,482 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: .5rem;
+    z-index: 100;
+}
+
+
+
+
+.container {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-image: url(./img/pexels-img-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.container::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    z-index: 10;
+}
+
+.logo {
+    position: absolute;
+    font-size: 200%;
+    font-weight: 700;
+    color: #eee;
+    z-index: 100;
+    letter-spacing: -4px;
+    text-transform: uppercase;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.navigation > a {
+    margin-right: 1.5rem;
+    padding: 1rem;
+    z-index: 20;
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #eee;
+    
+}
+
+.showcase {
+    z-index: 30;
+    color: wheat;
+    display: flex;
+    position: absolute;
+    top: 40%;
+    padding-left: 2rem;
+}
+.h1{
+    font-size: 3rem;
+    color: wheat;
+    font-weight: 2rem;
+}
+
+.h2 {
+    margin-top: 2rem;
+    font-size: 2rem;
+    color: wheat;
+    font-weight: 2rem;
+}
+
+span {
+    color: red;
+}
+
+.button {
+    position: absolute;
+    top: 120%;
+    background-color: crimson;
+    height: 3.5rem;
+    padding: 0;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    overflow: hidden;
+    font-family: sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: wheat;
+    cursor: pointer;
+    width: 20%;
+    align-items: center;
+}
+
+.button:hover {
+    background-color: rgb(250, 0, 50);
+    font-size: 1.6rem;
+}
+.button:active {
+    background-color: red;
+}
+
+.product-sample {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 300%;
+    font-weight: 900;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    box-shadow: inset 0px 0px 4px rgba(0,0,0,0.9);
+}
+
+
+.sample-website-1 {
+    background-image: url(./img/product-img-sample-1.jpg);
+   
+}
+.sample-website-2{
+    background-image: url(./img/product-img-sample-2.jpg);
+    
+}
+
+.sample-website-3{
+    background-image: url(./img/product-img-sample-3.jpg);
+    
+}
+
+.sample-website-4{
+    background-image: url(./img/product-img-sample-4.jpg);
+   
+}
+
+.sample-website-5{
+    background-image: url(./img/product-img-sample-5.jpg);
+    
+}
+
+.sample-website-6{
+    background-image: url(./img/product-img-sample-6.jpg);
+    
+}
+
+.sample-website-7{
+    background-image: url(./img/product-img-sample-7.jpg);
+    
+}
+
+.sample-website-8{
+    background-image: url(./img/product-img-sample-8.jpg);
+    
+}
+
+.sample-website-9{
+    background-image: url(./img/product-img-sample-9.jpg);
+    
+}
+
+.sample-website-10{
+    background-image: url(./img/product-img-sample-10.jpg);
+    
+}
+
+.sample-website-11{
+    background-image: url(./img/product-img-sample-11.jpg);
+    
+}
+
+.sample-website-12{
+    background-image: url(./img/product-img-sample-12.jpg);
+    
+}
+
+.container-2 {
+    
+    position: relative;
+    width: 100%;
+    height: 250vh;
+    padding: 5%;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    
+    
+}
+
+.article {
+    position: relative;
+    
+    background-repeat: no-repeat;
+    background-position: center;
+    
+    box-shadow: 0px 0px 7px rgba(0,0,0,0.7);
+    border-radius: 1px;
+    transition: .5s ease-in-out;
+}
+
+
+
+.article a {
+    height: 10%;
+    min-width: 45%;
+    display: flex;
+    justify-content: center;
+    
+}
+
+
+.article > a {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: absolute;
+    top: 88%;
+    left: 25%;
+
+    box-shadow: 0px 0px 4px rgba(0,0,0,0.9);
+    padding: 0;
+    border: none;
+    outline: none;
+    border-radius: 2.5px;
+    overflow: hidden;
+    font-family: sans-serif;
+    font-size: 1.2em;
+    font-weight: 800;
+    color: black;
+    cursor: pointer;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.article > a:hover {
+    background-color: rgba(0,0,0,0.8);
+    color: white;
+}
+.article > a:active {
+    background-color: rgba(0,0,0,0.9);
+    color: white;
+}
+
+footer {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #111;
+    height: auto;
+    width: 100vw;
+    font-family: Open sans-serif;
+    padding-top: 40px;
+    color: #fff;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.footer-content h3 {
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+
+.footer-content p {
+    max-width: 700px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+}
+
+.footer-bottom {
+    background: #000;
+    width: 100vw;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-bottom p {
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+
+.footer-bottom span {
+    text-transform: uppercase;
+    opacity: .8;
+    font-weight: 200;
+}
+
+/* Contact Form  */
+
+
+.container-contact, .contact, .contact-content, .contact-info, .contact-form {
+    z-index: 200;
+    color: white;
+}
+
+
+
+.contact {
+    position: relative;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contact .contact-content {
+    max-width: 600px;
+    text-align: center;
+}
+
+.contact .contact-content  h2 {
+    font-size: 36px;
+    font-weight: 500;
+    color: #fff;
+
+}
+
+.contact .contact-content p {
+    font-weight: 300;
+    color: #fff;
+}
+
+.container-contact {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    
+}
+
+.container-contact .contact-info {
+    width: 45%;
+    display: flex;
+}
+
+.container-contact .contact-info .box {
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.container-contact .contact-info .box .icon {
+    width: 40px;
+    height: 40px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 18px;
+    color: black;
+}
+
+.icon-1 {
+    position: absolute;
+    right: 100%;
+    top: 20%;
+}
+.icon-2 {
+    position: absolute;
+    right: 100%;
+    top: 50%;
+}
+.icon-3 {
+    position: absolute;
+    right: 100%;
+    top: 75%;
+}
+
+.container-contact .contact-info .box .text {
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: #fff;
+    flex-direction: column;
+    font-weight: 300;
+    margin-top: 5%;
+}
+
+.container-contact .contact-info .box .text h3 {
+    font-weight: 500;
+    color: #00bcd4;
+}
+
+.contact-form {
+    width: 30%;
+    padding: 30px;
+    background: #fff;
+}
+
+.contact-form h2 {
+    font-size: 30px;
+    color: #333;
+    font-weight: 500;
+}
+
+.contact-form .inputBox input {
+    position: relative;
+    width: 100%;
+    margin-top: 7px;
+}
+
+.contact-form .inputBox input,
+.contact-form .inputBox textarea {
+    width: 100%;
+    padding: 5px 0;
+    font-size: 10px;
+    margin: 5px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+}
+
+.blog-container {
+    position: absolute;
+    color: white;
+    z-index: 100;
+
+
+}
+
+.blog-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.blog-title h1 {
+    padding-top: 20%;
+}
+.blog-title a {
+    color: white;
+
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+    box-shadow: 0px 0px 4px rgba(197, 183, 183, 0.9);
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 2.5px;
+    overflow: hidden;
+    font-size: 1.2em;
+    font-weight: 800;
+    cursor: pointer;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.blog-title a:hover {
+    box-shadow: 0px 0px 4px rgba(236, 233, 233, 0.9);
+}
